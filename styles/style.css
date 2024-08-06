@@ -10,7 +10,7 @@
 }
 
 /*левая чать хэдера с меню и логотипом*/
-.left-part__header{
+.menu_logo__header{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,10 +23,10 @@
   flex-direction: row;
   gap: 31px;
   list-style-type: circle;
+  width: 392px;
 }
 
 .menu__elem{
-  white-space: nowrap;
   letter-spacing: 0.18px;
 }
 
@@ -42,7 +42,11 @@
   text-underline-offset: 4px;
 }
 
-.logo__img-black{
+.contacts_link{
+  text-underline-offset: 4px;
+}
+
+.logo__img-dark{
   background-image: url("../images/logo-black.svg");
   background-repeat: no-repeat;
   height: 105px;
@@ -59,14 +63,21 @@
  letter-spacing: -0.01px; 
 }
 
+.tint{
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+}
+
 .cover{
   background-image: url("../images/cover.jpg");
+  background-position: center center;
+  background-size: auto 100%;
   color: #FFF;
   padding: 165px 50px 51px 50px;
   box-sizing: border-box;
 }
 
-.title{
+.title_wrapper{
   padding: 0 0 135px 0;
   font-size: 100px;
   font-weight: 700;
@@ -74,13 +85,22 @@
   text-transform: uppercase;
 }
 
+.title{
+  font-size: 100px;
+  font-weight: 700;
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+}
+
 .title__left{
+  display: inline;
   text-align: left;
   line-height: 115%;
 }
 
 .title__center{
-  padding: 0 340px 0 286px;
+  /*padding: 0 340px 0 286px;*/ /*такое значение у падинга стоит из-за того, что выравнивание второй строки идёт не по центру, а с отступом от центральной оси*/
+  text-align: center;
   line-height: 140%;
 }
 
@@ -93,12 +113,12 @@
   letter-spacing: 0;
 }
 
-.letter-spacing__1{
-  letter-spacing: 0.053em;
+.letter-spacing__small{
+  letter-spacing: /*0.053em*/6px; /*здесь нет отступа в 30px. по макету да, видела, что letter spacing 30%. но на вёрстке это не работает...*/
 }
 
-.letter-spacing__2{
-  letter-spacing: 0.38em;
+.letter-spacing__big{
+  letter-spacing: /*0.38em*/35px;
 }
 
 .cover__subtitle{
@@ -122,15 +142,15 @@
 .button{
   width: 256px;
   height: 51px;
+  color:#FFF;
+  font-family: Raleway, sans-serif;
   background-color: rgba(255, 255, 255, 0);
   border: 1px #FFF solid;
-}
-
-.button__text{
-  color:#FFF;
   text-transform: uppercase;
   font-size: 22px;
   text-decoration: none;
+  text-align: center;
+  padding: 12px 32px 11px 31px;
 }
 
 .lots{
@@ -153,11 +173,12 @@
   display: flex;
   gap:25px;
   padding: 0 0 30px 0;
+  flex-wrap: wrap;
 }
 
 .card{
   width:334px;
-  height:563px;
+  min-height:563px;
   box-sizing: border-box;
   padding: 51px 40px 48px 40px;
   display: flex;
@@ -197,7 +218,7 @@
   background-image: url("../images/card-lot-03.jpg");
 }
 
-.href{
+.button_more{
   font-family: Raleway, sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -221,7 +242,7 @@
   align-items: center;
 }
 
-.logo__img-white{
+.logo__img-light{
   width: 148px;
   height: 114px;
 }
@@ -241,22 +262,6 @@
   font-size: 20px;
 }
 
-.letter-spacing__5{
-  letter-spacing: 0.2px;
-}
-
-.letter-spacing__6{
-  letter-spacing: 0.4px;
-}
-
-.letter-spacing__7{
-  letter-spacing: 0.6px;
-}
-
-.letter-spacing__8{
-  letter-spacing: -0.2px;
-}
-
 .footer{
   padding: 0 50px 88px 50px;
   display: flex;
@@ -264,7 +269,7 @@
   justify-content: space-between;
 }
 
-.footer_upd{
+.footer__letter_spacing{
   letter-spacing: 1.2px;
 }
 
@@ -284,21 +289,17 @@
   gap: 48px;
 }
 
-.circle{
-  border-radius: 50%;
-  border: 1px black solid;
+.yt{
   height: 48px;
   width: 48px;
 }
 
-.yt{
-  background-image: url("../images/yt.svg");
-}
-
 .vk{
-  background-image: url("../images/vk.svg");
+  height: 48px;
+  width: 48px;
 }
 
 .pin{
-  background-image: url("../images/pinterest.svg");
+  height: 48px;
+  width: 48px;
 }
