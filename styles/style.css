@@ -71,21 +71,14 @@
 .cover{
   background-image: url("../images/cover.jpg");
   background-position: center center;
-  background-size: auto 100%;
+  background-size: cover;
   color: #FFF;
   padding: 165px 50px 51px 50px;
   box-sizing: border-box;
 }
 
-.title_wrapper{
-  padding: 0 0 135px 0;
-  font-size: 100px;
-  font-weight: 700;
-  font-family: Raleway, sans-serif;
-  text-transform: uppercase;
-}
-
 .title{
+  padding: 0 0 125px 0;
   font-size: 100px;
   font-weight: 700;
   font-family: Raleway, sans-serif;
@@ -93,32 +86,32 @@
 }
 
 .title__left{
-  display: inline;
+  display: inline-block;
   text-align: left;
+  width:100%;
   line-height: 115%;
 }
 
 .title__center{
-  /*padding: 0 340px 0 286px;*/ /*такое значение у падинга стоит из-за того, что выравнивание второй строки идёт не по центру, а с отступом от центральной оси*/
+  display: inline-block;
+  width:94%;
   text-align: center;
-  line-height: 140%;
+  line-height: 129%;
 }
 
 .title__right{
+  display: inline-block;
+  width:100%;
   text-align: right;
   line-height: 100%;
 }
 
-.letter-spacing__0{
-  letter-spacing: 0;
-}
-
 .letter-spacing__small{
-  letter-spacing: /*0.053em*/6px; /*здесь нет отступа в 30px. по макету да, видела, что letter spacing 30%. но на вёрстке это не работает...*/
+  letter-spacing: 0.3em;
 }
 
-.letter-spacing__big{
-  letter-spacing: /*0.38em*/35px;
+.letter-spacing__medium{
+  letter-spacing: 0.6em;
 }
 
 .cover__subtitle{
@@ -135,11 +128,11 @@
   font-weight: 400;
 }
 
-.letter-spacing__3{
+.letter-spacing__big{
   letter-spacing: 0.84em;
 }
 
-.button{
+.button_cover{
   width: 256px;
   height: 51px;
   color:#FFF;
@@ -186,7 +179,7 @@
   justify-content: space-between;
   color: #FFF;
   background-position: center center;
-  background-size: auto 100%;
+  background-size: cover;
 }
 
 .card__title{
@@ -204,6 +197,7 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 120%;
+  text-decoration: none;
 }
 
 .card__lot-1{
@@ -218,7 +212,7 @@
   background-image: url("../images/card-lot-03.jpg");
 }
 
-.button_more{
+.button_lots{
   font-family: Raleway, sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -289,17 +283,7 @@
   gap: 48px;
 }
 
-.yt{
-  height: 48px;
-  width: 48px;
-}
-
-.vk{
-  height: 48px;
-  width: 48px;
-}
-
-.pin{
+.media_link{
   height: 48px;
   width: 48px;
 }
