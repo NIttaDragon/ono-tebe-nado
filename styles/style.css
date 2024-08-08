@@ -49,10 +49,11 @@
   width: 148px;
 }
 
+/*контактные ссылки*/
 .contacts{
   font-size: 18px;
   font-family: Raleway, sans-serif;
-  width:220px;
+  width:239px;
   line-height: 24.3px; /* 135% */
   letter-spacing: 0.2px;
 }
@@ -61,11 +62,13 @@
  letter-spacing: 0.1px; 
 }
 
+/*затемнение*/
 .tint{
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: multiply;
 }
 
+/*обложка*/
 .cover{
   background-image: url("../images/cover.jpg");
   background-position: center center;
@@ -112,6 +115,7 @@
   letter-spacing: 0.6em;
 }
 
+/*нижняя надпись и кнопка*/
 .cover__subtitle{
   display: flex;
   gap: 60px;
@@ -144,6 +148,7 @@
   padding: 12px 32px 11px 31px;
 }
 
+/*лоты*/
 .lots{
   padding: 179px 24px 0 24px;
   box-sizing: border-box;
@@ -160,6 +165,7 @@
   padding: 0 0 27px 40px;
 }
 
+/*карточки лотов*/
 .cards{
   display: flex;
   gap:25px;
@@ -218,6 +224,7 @@
   padding: 0 0 0 40px;
 }
 
+/*об аукционе*/
 .about{
   padding: 183px 24px 181px 71px;
   display: flex;
@@ -262,8 +269,9 @@
   
 }
 
+/*навигация в футере*/
 .menu_footer{
-  padding: 0 0 0 20px;
+  /*padding: 0 0 0 20px;*/ /*добавила паддинг т.к меню не центрировалось, но понимаю, что не очень правильно так делать*/
   display: flex;
   flex-direction: column;
   list-style: none;
