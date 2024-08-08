@@ -271,7 +271,6 @@
 
 /*навигация в футере*/
 .menu_footer{
-  /*padding: 0 0 0 20px;*/ /*добавила паддинг т.к меню не центрировалось, но понимаю, что не очень правильно так делать*/
   display: flex;
   flex-direction: column;
   list-style: none;
